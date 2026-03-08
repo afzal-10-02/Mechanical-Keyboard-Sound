@@ -1,63 +1,60 @@
 {
-	"name": "mechanical-keyboard-sound",
-	"displayName": "Mechanical Keyboard Sound",
-	"description": "Enhance your VS Code typing experience with mechanical keyboard sounds.",
-	"version": "0.0.1",
-	"publisher": "Afzal1002",
-	"engines": {
-		"vscode": "^1.98.0"
-	},
-	"homepage": "https://github.com/afzal-10-02/Mechanical-Keyboard-Sound",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/afzal-10-02/Mechanical-Keyboard-Sound.git"
-	},
-	"bugs": {
-		"url": "https://github.com/afzal-10-02/Mechanical-Keyboard-Sound/issues",
-		"email": "afzal.22it1602@gmail.com"
-	},
-	"icon": "icon.webp",
-	"keywords": [
-		"sound",
-		"keyboard",
-		"typing",
-		"mechanical",
-		"typewriter"
-	],
-	"license": "MIT",
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onStartupFinished",
-		"onDidOpenTextDocument"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "mechanical-keyboard-sound.mechanicalkeyboardsound",
-				"title": "Mechanical Keyboard Sound"
-			}
-		]
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "vscode-test"
-	},
-	"devDependencies": {
-		"@types/mocha": "^10.0.10",
-		"@types/node": "20.x",
-		"@types/vscode": "^1.98.0",
-		"@vscode/test-cli": "^0.0.10",
-		"@vscode/test-electron": "^2.4.1",
-		"eslint": "^9.21.0"
-	},
-	"dependencies": {
-		"fs": "^0.0.1-security",
-		"node-web-audio-api": "^1.0.3",
-		"play-sound": "^1.1.6",
-		"sound-play": "^1.1.0"
-	}
+  "name": "mechanical-keyboard-sound",
+  "displayName": "Mechanical Keyboard Sound",
+  "description": "Enhance your VS Code typing experience with mechanical keyboard sounds.",
+  "version": "0.0.1",
+  "publisher": "Afzal1002",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "homepage": "https://github.com/afzal-10-02/Mechanical-Keyboard-Sound",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afzal-10-02/Mechanical-Keyboard-Sound.git"
+  },
+  "bugs": {
+    "url": "https://github.com/afzal-10-02/Mechanical-Keyboard-Sound/issues",
+    "email": "afzal.22it1602@gmail.com"
+  },
+  "icon": "icon.webp",
+  "keywords": [
+    "sound",
+    "keyboard",
+    "typing",
+    "mechanical",
+    "typewriter"
+  ],
+  "license": "MIT",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onDidOpenTextDocument"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mechanical-keyboard-sound.mechanicalkeyboardsound",
+        "title": "Mechanical Keyboard Sound"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.98.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.21.0"
+  },
+  "dependencies": {
+    "sound-play": "^1.1.0"
+  }
 }
