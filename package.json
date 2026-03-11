@@ -2,7 +2,7 @@
   "name": "mechanical-keyboard-sound",
   "displayName": "Mechanical Keyboard Sound",
   "description": "Enhance your VS Code typing experience with mechanical keyboard sounds.",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "publisher": "Afzal1002",
   "engines": {
     "vscode": "^1.98.0"
@@ -52,9 +52,11 @@
     "@types/vscode": "^1.98.0",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1",
+    "esbuild": "^0.27.3",
     "eslint": "^9.21.0"
   },
   "dependencies": {
+    "node-web-audio-api": "^1.0.8",
     "sound-play": "^1.1.0"
   }
 }
