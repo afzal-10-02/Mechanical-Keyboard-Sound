@@ -19,8 +19,16 @@ function activate(context) {
 
 // Get the correct sound file based on key press
 function getSoundFile(key) {
-    const basePath = path.join(__dirname, 'sounds');	 // Ensure 'sounds' folder contains WAV files
-    return path.join(basePath, 'key.wav');				 // Use WAV for fast playback
+    const basePath = path.join(__dirname, 'sounds');
+
+    // Use WAV for fast playback
+    // ENTER key produces newline
+    if (key === '\n' || key === '\r\n') {
+        return path.join(basePath, 'enter1.wav');
+    }
+
+    // Default key sound
+    return path.join(basePath, 'key.wav');
 }
 
 // Play the sound using node-web-audio-api
@@ -41,4 +49,4 @@ async function playSound(filePath) {
     }
 }
 
-module.exports = { activate};
+module.exports = { activate };
